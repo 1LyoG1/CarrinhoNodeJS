@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 
-const git = new Sequelize('productsDB', 'postgres', '1234', {
+const sequelize = new Sequelize('productsDB', 'postgres', '1234', {
   host: 'localhost',
   dialect: 'postgres',
 });
@@ -11,7 +11,7 @@ module.exports = {
   open: async () => {
     try {
       await sequelize.authenticate();
-      console.log('Servidor inicializado com sucesso!');
+      console.log('Servidor inicializado!');
     } catch (error) {
       console.error('Não foi possivel inicializar o servidor!');
     }
