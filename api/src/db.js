@@ -11,7 +11,7 @@ module.exports = {
   open: async () => {
     try {
       await sequelize.authenticate();
-      console.log('Servidor inicializado!');
+      console.log('Servidor inicializado com sucesso!');
     } catch (error) {
       console.error('Não foi possivel inicializar o servidor!');
     }
