@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Compras</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">LOGO</div>
+      <div class="header-right">
+        <div><a href="../homeScreen/index.html">Home</a></div>
+        <div><a href="../insertProductScreen/insertProduct.html">Novo Produto</a></div>
+        <div><a href="../carrinhoScreen/carrinho.html">Carrinho</a><span id="carCount" class="count-car">0</span></div>
+      </div>
+    </div>
+    <div class="body-home">
+      <div class="filter">
+        <input  id="searchText" class="input-search" type="text" placeholder="Busque aqui seu produto"></input>
+        <button class="button-search" onclick="createListProductHTML()">Buscar</button>
+        <div id="agroup-card-product">
+          <div>Realize a busca para trazer resultados!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Compras</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">LOGO</div>
+      <div class="header-right">
+        <div><a href="../homeScreen/index.html">Home</a></div>
+        <div><a href="../insertProductScreen/insertProduct.html">Novo Produto</a></div>
+        <div><a href="../carrinhoScreen/carrinho.html">Carrinho</a><span id="carCount" class="count-car">0</span></div>
+      
+      </div>
+      </div>
+    </div>
+    <br />
+    <div style="display: flex; gap: 20px">
+      <div class="carItem" id="carAgroupItem">
+        <div class="grid-car">
+          <div>IMAGEM</div>
+          <div>PRODUTO</div>
+          <div>DESCRIÇÃO</div>
+          <div>QUANTIDADE</div>
+          <div>TOTAL</div>
+        </div>
+        <div class="grid-car" id="car-item"></div>
+      </div>
+      <div class="car-total">
+        <div class="car-total-title">SUBTOTAL</div>
+        <div class="car-total-value" id="car-total">$0</div>
+        <div ><button style="width: 100%; " class="button-save">Confirmar</button></div>
+    </div>
+  </body>
+
+  <script src="carrinho.js"></script>
+</html>

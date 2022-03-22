@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Compras</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">LOGO</div>
+      <div class="header-right">
+        <div><a href="../homeScreen/index.html">Home</a></div>
+        <div>
+          <a href="../insertProductScreen/insertProduct.html">Novo Produto</a>
+        </div>
+        <div>
+          <a href="../carrinhoScreen/carrinho.html">Carrinho</a
+          ><span id="carCount" class="count-car">0</span>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div style="display: flex; justify-content: center">
+      <form class="card-form" onsubmit="inserProduct(event)">
+        <div>
+          <img
+            class="image-card-product"
+            src="https://triunfo.pe.gov.br/pm_tr430/wp-content/uploads/2018/03/sem-foto.jpg"
+          />
+        </div>
+        <div style="width: 50%; margin-right: 30px">
+          <div>
+            <label for="nome">Nome</label><br />
+            <input style="width: 100%" type="text" id="name" />
+          </div>
+          <div>
+            <label for="description">Descrição</label><br />
+            <textarea style="width: 100%" id="description"></textarea>
+          </div>
+          <div>
+            <label for="value">Valor</label><br />
+            <input style="width: 100%" type="number" id="value" />
+          </div>
+          <div
+            style="margin-top: 20px; display: flex; justify-content: flex-end"
+          >
+            <button class="button-save" type="submit">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="InsertProduct.js"></script>
+</html>
