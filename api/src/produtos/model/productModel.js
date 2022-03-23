@@ -14,6 +14,9 @@ module.exports = sequelize.define(
       type: DataTypes.DOUBLE,
       defaultValue: 0,
     },
+    imagem: {
+      type: DataTypes.STRING(2147489),
+    },
   },
   {
     tableName: 'produto',

@@ -41,6 +41,7 @@ const createProduct = async (jsonBody) => {
       nome: jsonBody.nome,
       descricao: jsonBody.descricao,
       valor: jsonBody.valor,
+      imagem: jsonBody.imagem,
     });
     return result;
   } catch (err) {
