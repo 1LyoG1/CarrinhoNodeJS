@@ -7,6 +7,9 @@
   const productModel = require('./produtos/model/productModel');
   await productModel.sync({ alter: true });
 
+  const userModel = require('./usuario/model/usuarioModel');
+  await userModel.sync({ alter: true });
+
   const cors = require('cors');
 
   const express = require('express');
@@ -16,6 +19,7 @@
 
   app.use(cors());
   app.use('/', require('./produtos/controller/produtoController'));
+  app.use('/', require('./usuario/controller/usuarioController'));
 
   app.listen(3000);
 })();
