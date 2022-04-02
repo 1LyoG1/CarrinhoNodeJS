@@ -173,6 +173,66 @@ body {
   justify-content: space-between;
 }
 
+/*LOGIN*/
+
+.body-login {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(41, 82, 144, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.card-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.inside-card-login {
+  width: 350px;
+  height: 420px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.title-card-login {
+  display: block;
+  font-size: 30px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 37px;
+}
+
+.input-card-login {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.card-login input {
+  margin-top: 10px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  outline: none;
+  font-size: 20px;
+}
+
 /*------------------------------------------*/
 
 .button-icon {

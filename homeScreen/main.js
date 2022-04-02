@@ -39,7 +39,7 @@ const createListProductHTML = async () => {
     productHTML =
       productHTML +
       `<div class="card-product ">
-      <div><img  class="image-card-product" src="https://triunfo.pe.gov.br/pm_tr430/wp-content/uploads/2018/03/sem-foto.jpg"></div>
+      <div><img  class="image-card-product" src="${product.imagem}"></div>
       <div class="name-card-product ">${product.nome}</div>
       <div class="descricao-card-product ">${product.descricao}</div>
       <div class="value-card-product">$${product.valor}</div>
@@ -61,7 +61,7 @@ const addToCar = (productJSON) => {
   let carrinhoArray = JSON.parse(
     sessionStorage.getItem('carrinhoArray') || '[]'
   );
-
+  console.log(carrinhoArray);
   carrinhoArray.push(productJSON);
   sessionStorage.setItem('carrinhoArray', JSON.stringify(carrinhoArray));
 

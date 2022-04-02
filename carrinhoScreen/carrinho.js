@@ -33,10 +33,11 @@ const getSessionAndPlotScreen = () => {
   let totalCar = 0;
   let index = 0;
   carrinhoArray.forEach((element) => {
+    console.log(element);
     totalCar += element.valor;
     listCar += `
       <div>
-      <img class="image-card-product"src="https://triunfo.pe.gov.br/pm_tr430/wp-content/uploads/2018/03/sem-foto.jpg"/>
+      <img class="image-card-product"src="${element.imagem}"/>
       </div>
       <div class="name-card-product ">${element.nome}</div>
       <div class="descricao-card-product">${element.descricao}</div>

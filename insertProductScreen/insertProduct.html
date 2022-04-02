@@ -29,8 +29,16 @@
       <form class="card-form" onsubmit="inserProduct(event)">
         <div>
           <img
+            id="imgProduct"
             class="image-card-product"
             src="https://triunfo.pe.gov.br/pm_tr430/wp-content/uploads/2018/03/sem-foto.jpg"
+          />
+          <input
+            type="file"
+            id="myFile"
+            name="filename"
+            onchange="selectImageProduct()"
+            accept="image/*"
           />
         </div>
         <div style="width: 50%; margin-right: 30px">
